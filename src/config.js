@@ -1,0 +1,1 @@
+export const API_URL = "http://wpgraphql.local/graphql";
