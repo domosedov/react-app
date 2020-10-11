@@ -8,13 +8,13 @@ import About from "./pages/About";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
-import SecretPage from './pages/SecretPage'
+import SecretPage from "./pages/SecretPage";
 import Unauthorized from "./pages/Unauthorized";
 
 function App() {
-  const [loggedIn, toggle] = useReducer(t => !t, false);
+  const [loggedIn, toggle] = useReducer((t) => !t, false);
 
-  const logIn = () => toggle()
+  const logIn = () => toggle();
 
   return (
     <Fragment>
@@ -35,7 +35,7 @@ function App() {
           <SecretPage foo="bar" />
         </ProtectedRoute>
         <Route exact path="/unauthorized">
-          <Unauthorized/>
+          <Unauthorized />
         </Route>
         <Route path="*">
           <NotFound />
@@ -43,7 +43,6 @@ function App() {
       </Switch>
     </Fragment>
   );
-  
 }
 
 export default App;

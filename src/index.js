@@ -5,6 +5,7 @@ import {BrowserRouter} from 'react-router-dom'
 import App from './App';
 import {ThemeProvider} from 'styled-components'
 import { theme } from './components/theme/theme';
+import './styles.css';
 
 ReactDOM.render(
   <React.StrictMode>

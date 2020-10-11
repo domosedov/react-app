@@ -9,8 +9,9 @@ const StyledHeader = styled.header`
   padding: 0.5rem 1rem;
 `;
 
-const Header = ({size}) => {
+const Header = () => {
+  console.log('render')
   return <StyledHeader>Styled Header</StyledHeader>;
 };
 
-export default Header;
+export default React.memo(Header);

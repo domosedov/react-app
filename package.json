@@ -13,7 +13,19 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "tailwindcss": "^1.8.10",
+    "twin.macro": "^1.10.0"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "tailwind.config.js",
+      "preset": "styled-components",
+      "autoCssProp": true,
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
   }
 }

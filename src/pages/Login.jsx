@@ -1,7 +1,6 @@
 import React from 'react';
 import {useLocation, useHistory} from 'react-router-dom'
 
-
 const Login = ({ loggedIn,handleClick}) => {
   let history = useHistory();
   console.log(history)
